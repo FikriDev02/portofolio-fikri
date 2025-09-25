@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikri Fadila</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- vavicon -->
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/user-23/512/User_Preppy_2.png">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --gradient: linear-gradient(106.1deg, rgba(255, 129, 86, 1) 2.2%, rgba(223, 69, 132, 1) 38.7%, rgba(67, 37, 129, 1) 90.2%);
+            --border-gradient: radial-gradient(circle farthest-corner at 10% 20%, rgba(214, 40, 40, 1) 0%, rgba(255, 195, 0, 1) 90%);
+            --color-text1: #f97316;
+            --color-text2: #9A3412;
+            --color-text3: #64748B;
+            --color-text4: #1E293B;
+            --color-text4: #fff;
+            --bg-color1: #1E293B;
+            --bg-color2: #f97316;
+            --bg-color3: #0A939E;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-color2);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--color-text4);
+        }
+
+        .nav-list ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+        }
+
+        .nav-list ul li a {
+            color: var(--color-text4);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .nav-list a:hover {
+            color: #000000;
+        }
+
+        /* kiri */
+
+        .jumbotron {
+            display: flex;
+            align-items: center;
+            margin: 100px 50px;
+            flex-wrap: wrap;
+            gap: 100px;
+        }
+
+        .jumbotron-kiri h2 {
+            color: var(--color-text1);
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .jumbotron-kiri h1 {
+            background: var(--gradient);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-size: 45px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2.1px;
+        }
+
+        .jumbotron-kiri p {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 19px;
+        }
+
+        .jumbotron-kiri .student {
+            color: var(--color-text3);
+        }
+
+        .jumbotron-kiri .fronback {
+            color: var(--color-text2);
+        }
+
+        .jumbotron-kiri .title {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: var(--color-text3);
+            font-style: oblique;
+            line-height: 1.5;
+        }
+
+        .btn button {
+            background-color: var(--bg-color2);
+            border: none;
+            padding: 15px 25px;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .btn-jumbotron {
+            border-radius: 999px;
+            color: var(--color-text4);
+            cursor: pointer;
+        }
+
+        .btn-jumbotron:hover {
+            background-color: #9A3412;
+        }
+
+        /* kanan */
+        .jumbotron-kanan {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            padding: 6px;
+            background: var(--border-gradient);
+        }
+
+        .jumbotron-kanan img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .icon {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 22px;
+        }
+
+        .icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--color-text1);
+        }
+
+        .tentang-profile {
+            margin: 50px 50px;
+        }
+
+        .tentang-profile h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: var(--color-text1);
+            margin-bottom: 15px;
+        }
+
+        .tentang-profile .pengembangan-diri {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .tentang-profile .title-pengemabangan p {
+            color: var(--color-text3);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .title-pengemabangan1 {
+            margin-top: 15px;
+        }
+
+        .pendidkan {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .bg-pendidikan {
+            flex: 1;
+        }
+
+        .bg-komunikasi {
+            flex: 1;
+        }
+
+        .bg-pendidikan h2 {
+            font-size: 18px;
+            color: var(--color-text1);
+            text-transform: uppercase;
+        }
+
+        .p-pengalaman {
+            margin-top: 18px;
+        }
+
+        .bg-pendidikan ul li {
+            margin-top: 5px;
+            font-size: 14px;
+            color: var(--color-text3);
+        }
+
+        .bg-komunikasi h2 {
+            font-size: 18px;
+            color: var(--color-text1);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .bg-komunikasi p {
+            font-size: 14px;
+            color: var(--color-text3);
+            text-transform: capitalize;
+            line-height: 1.5;
+        }
+
+        .icon-tentang {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .icon-tentang img {
+            width: 35px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 35px;
+        }
+
+        .icon-wa {
+            position: fixed;
+            box-shadow: 0px 2px 4px 0px #0A939E;
+            background-color: var(--bg-color3);
+            padding: 10px 16px;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 999px;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        .icon-wa img {
+            width: 27px;
+            height: 27px;
+        }
+
+        .icon-wa p {
+            color: var(--color-text4);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        /* proyek */
+
+        .proyek {
+            background-color: var(--bg-color1);
+            /* height: 1200px; */
+        }
+
+        .proyek-client {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        .proyek-item {
+            width: 550px;
+            background-color: #151b23;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .proyek-item img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px;
+            aspect-ratio: 16 / 9;
+            border: 2px solid var(--color-text4);
+        }
+
+        .title-proyek h2 {
+            color: var(--color-text1);
+        }
+
+        .title-proyek {
+            margin-top: 13px;
+        }
+
+        .title-proyek p {
+            color: var(--color-text4);
+            font-style: oblique;
+            font-size: 15px;
+            line-height: 1.3;
+            margin-top: 5px;
+        }
+
+        .proyek-konten {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+
+        .proyek-konten h1 {
+            color: var(--color-text1);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+
+        .proyek-konten p {
+            color: var(--color-text4);
+            text-align: center;
+            font-size: 15px;
+            max-width: 900px;
+            margin-top: 10px;
+        }
+
+        .klien {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        .klien h1 {
+            color: var(--color-text1);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .klien .klien-title p {
+            font-size: 30px;
+            text-transform: capitalize;
+            color: var(--color-text3);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .klien p {
+            color: var(--color-text3);
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .logo-klien img {
+            width: 100px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .logo-klien {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .blok {
+            background-color: var(--bg-color1);
+            margin-top: 40px;
+        }
+
+        .blok-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .blok-title h1 {
+            text-transform: uppercase;
+            color: var(--color-text1);
+            margin-top: 50px;
+        }
+
+        .blok-title p,
+        h2 {
+            color: var(--color-text4);
+        }
+
+        .blok-title h2 {
+            margin-top: 30px;
+            font-size: 32px;
+        }
+
+        .blok-title p {
+            max-width: 1000px;
+            text-align: center;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        .blok-thumbanil {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+            margin-top: 5px;
+        }
+
+        .thumbnail-img {
+            width: 550px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .thumbnail-img img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+            margin-bottom: 18px;
+        }
+
+        .title-img h2 {
+            font-size: 25px;
+            color: var(--bg-color1);
+            font-weight: 700;
+        }
+
+        .thumbnail-img p {
+            margin-top: 15px;
+            font-style: oblique;
+        }
+
+        .icon-awesom {
+            color: var(--color-text1);
+            margin-top: 16px;
+            font-size: 20px;
+        }
+
+        .kontak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 60px 50px;
+        }
+
+        .kontak-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .kontak h1 {
+            color: var(--color-text1);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .kontak h2 {
+            color: var(--color-text3);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .kontak p {
+            text-transform: capitalize;
+            color: var(--color-text3);
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .kontak-form {
+            margin-top: 50px;
+            width: 800px;
+        }
+
+        .kontak-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: var(--color-text1);
+            font-weight: 600;
+        }
+
+        .kontak-form input {
+            margin-bottom: 26px;
+            height: 56px;
+            padding: 15px;
+            border-radius: 6px;
+            background-color: #CBD5E1;
+            font-size: 16px;
+            border: none;
+        }
+
+        .kontak-form textarea {
+            margin-bottom: 26px;
+            padding: 15px;
+            border-radius: 6px;
+            background-color: #CBD5E1;
+            font-size: 16px;
+            border: none;
+            height: 160px;
+            /* outline: none; */
+        }
+
+        .kontak-form button {
+            padding: 15px;
+            border: none;
+            background-color: var(--bg-color2);
+            color: #fff;
+            font-size: 16px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .kontak-form button:hover {
+            background-color: #9A3412;
+        }
+
+        .kontak-form input:focus,
+        .kontak-form textarea:focus {
+            border: 1px solid var(--bg-color2);
+            outline: none;
+        }
+
+        /* footer */
+        footer {
+            background-color: var(--bg-color1);
+            padding: 90px;
+            color: #fff;
+        }
+
+        .footer-menu {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-menu h1 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-menu h3 {
+            color: var(--color-text1);
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .footer-menu ul {
+            list-style: none;
+        }
+
+        .footer-menu ul li {
+            line-height: 2.3;
+        }
+
+
+        .icon-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 18px;
+            border-top: 1px solid #fff;
+        }
+
+        .icon-footer img {
+            width: 40px;
+            height: 40px;
+            margin-top: 35px;
+        }
+
+        /* Media Queries untuk Responsivitas */
+
+        /* Tablet (768px - 1024px) */
+        @media (max-width: 1024px) {
+            .jumbotron {
+                gap: 50px;
+                margin: 80px 30px;
+            }
+
+            .jumbotron-kiri h1 {
+                font-size: 40px;
+            }
+
+            .jumbotron-kanan {
+                width: 300px;
+                height: 300px;
+            }
+
+            .tentang-profile {
+                margin: 40px 30px;
+            }
+
+            .pendidkan {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .proyek-client {
+                padding: 30px;
+            }
+
+            .proyek-item {
+                width: 450px;
+            }
+
+            .kontak-form {
+                width: 600px;
+            }
+
+            footer {
+                padding: 60px;
+            }
+        }
+
+        /* Mobile Landscape (481px - 767px) */
+        @media (max-width: 767px) {
+            header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-list ul {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .icon {
+                justify-content: center;
+            }
+
+            .nav-list ul li a {
+                font-size: 14px;
+            }
+
+            .jumbotron {
+                flex-direction: column;
+                text-align: center;
+                margin: 60px 20px;
+                gap: 40px;
+            }
+
+            .jumbotron-kiri h1 {
+                font-size: 35px;
+            }
+
+            .jumbotron-kiri h2 {
+                font-size: 22px;
+            }
+
+            .jumbotron-kiri p {
+                font-size: 18px;
+            }
+
+            .jumbotron-kanan {
+                width: 250px;
+                height: 250px;
+            }
+
+            .tentang-profile {
+                margin: 40px 20px;
+            }
+
+            .tentang-profile .pengembangan-diri {
+                font-size: 22px;
+            }
+
+            .pendidkan {
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 30px;
+            }
+
+            .icon-tentang {
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .icon-tentang img {
+                width: 30px;
+                margin-top: 20px;
+            }
+
+            .proyek-konten {
+                padding: 20px;
+            }
+
+            .proyek-konten h1 {
+                font-size: 22px;
+            }
+
+            .proyek-konten p {
+                font-size: 14px;
+                margin: 0 10px;
+            }
+
+            .proyek-client {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .proyek-item {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .klien {
+                padding: 30px 20px;
+            }
+
+            .klien .klien-title p {
+                font-size: 25px;
+            }
+
+            .logo-klien {
+                gap: 15px;
+                margin-top: 40px;
+                flex-wrap: wrap;
+            }
+
+            .logo-klien img {
+                width: 80px;
+            }
+
+            .blok-title h1 {
+                margin-top: 30px;
+            }
+
+            .blok-title h2 {
+                font-size: 28px;
+            }
+
+            .blok-title p {
+                margin: 20px 10px;
+            }
+
+            .blok-thumbanil {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .thumbnail-img {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .title-img h2 {
+                font-size: 22px;
+            }
+
+            .kontak {
+                margin: 40px 20px;
+            }
+
+            .kontak h2 {
+                font-size: 20px;
+            }
+
+            .kontak-form {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            footer {
+                padding: 40px 20px;
+            }
+
+            .footer-menu {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .footer-menu h1 {
+                font-size: 35px;
+            }
+
+            .icon-footer {
+                margin-top: 30px;
+                gap: 15px;
+            }
+
+            .icon-footer img {
+                width: 35px;
+                height: 35px;
+                margin-top: 25px;
+            }
+        }
+
+        /* Mobile Portrait (320px - 480px) */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 20px;
+            }
+
+            .nav-list ul {
+                gap: 15px;
+            }
+
+            .nav-list ul li a {
+                font-size: 12px;
+            }
+
+            .jumbotron {
+                margin: 40px 15px;
+                gap: 30px;
+            }
+
+            .jumbotron-kiri h1 {
+                font-size: 28px;
+                letter-spacing: 1px;
+            }
+
+            .jumbotron-kiri h2 {
+                font-size: 18px;
+            }
+
+            .jumbotron-kiri p {
+                font-size: 16px;
+            }
+
+            .jumbotron-kiri .title {
+                font-size: 14px;
+            }
+
+            .jumbotron-kanan {
+                width: 200px;
+                height: 200px;
+            }
+
+            .icon img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .btn button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+
+            .tentang-profile {
+                margin: 30px 15px;
+            }
+
+            .tentang-profile h1 {
+                font-size: 18px;
+            }
+
+            .tentang-profile .pengembangan-diri {
+                font-size: 20px;
+            }
+
+            .tentang-profile .title-pengemabangan p {
+                font-size: 15px;
+            }
+
+            .bg-pendidikan h2,
+            .bg-komunikasi h2 {
+                font-size: 16px;
+            }
+
+            .bg-pendidikan ul li,
+            .bg-komunikasi p {
+                font-size: 13px;
+            }
+
+            .icon-tentang img {
+                width: 25px;
+            }
+
+            .icon-wa {
+                bottom: 15px;
+                right: 15px;
+                padding: 8px 12px;
+            }
+
+            .icon-wa img {
+                width: 22px;
+                height: 22px;
+            }
+
+            .icon-wa p {
+                font-size: 12px;
+            }
+
+            .proyek-konten h1 {
+                font-size: 20px;
+            }
+
+            .proyek-konten p {
+                font-size: 13px;
+            }
+
+            .proyek-item {
+                padding: 15px;
+            }
+
+            .title-proyek h2 {
+                font-size: 18px;
+            }
+
+            .title-proyek p {
+                font-size: 13px;
+            }
+
+            .klien {
+                padding: 20px 15px;
+            }
+
+            .klien h1 {
+                font-size: 18px;
+            }
+
+            .klien .klien-title p {
+                font-size: 22px;
+            }
+
+            .klien p {
+                font-size: 13px;
+            }
+
+            .logo-klien img {
+                width: 60px;
+            }
+
+            .blok-title h1 {
+                font-size: 18px;
+            }
+
+            .blok-title h2 {
+                font-size: 24px;
+            }
+
+            .blok-title p {
+                font-size: 13px;
+                margin: 15px 5px;
+            }
+
+            .thumbnail-img {
+                padding: 15px;
+            }
+
+            .title-img h2 {
+                font-size: 18px;
+            }
+
+            .thumbnail-img p {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+
+            .kontak {
+                margin: 30px 15px;
+            }
+
+            .kontak h1 {
+                font-size: 18px;
+            }
+
+            .kontak h2 {
+                font-size: 18px;
+            }
+
+            .kontak p {
+                font-size: 13px;
+            }
+
+            .kontak-form input,
+            .kontak-form textarea {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .kontak-form input {
+                height: 48px;
+                margin-bottom: 20px;
+            }
+
+            .kontak-form textarea {
+                height: 120px;
+                margin-bottom: 20px;
+            }
+
+            .kontak-form button {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            footer {
+                padding: 30px 15px;
+            }
+
+            .footer-menu h1 {
+                font-size: 28px;
+            }
+
+            .footer-menu h3 {
+                font-size: 16px;
+            }
+
+            .footer-menu ul li {
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            .icon-footer img {
+                width: 30px;
+                height: 30px;
+                margin-top: 20px;
+            }
+        }
+
+        /* Extra Small Mobile (max-width: 320px) */
+        @media (max-width: 320px) {
+            .jumbotron-kiri h1 {
+                font-size: 24px;
+            }
+
+            .jumbotron-kiri h2 {
+                font-size: 16px;
+            }
+
+            .jumbotron-kanan {
+                width: 180px;
+                height: 180px;
+            }
+
+            .tentang-profile .pengembangan-diri {
+                font-size: 18px;
+            }
+
+            .klien .klien-title p {
+                font-size: 20px;
+            }
+
+            .blok-title h2 {
+                font-size: 20px;
+            }
+
+            .title-img h2 {
+                font-size: 16px;
+            }
+
+            .footer-menu h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Fikri Fadila</div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Saya</a></li>
+                <li><a href="#">Proyek</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">Blok</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="jumbotron">
+        <!-- Kiri -->
+        <div class="jumbotron-kiri">
+            <h2>Hallo semua 👋, Saya</h2>
+            <h1>Fikri Fadila</h1>
+            <p><span class="student">Student</span> | <span class="fronback">Front end Developer</span></p>
+            <div class="icon">
+                <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-html-markup-develop-layout-language-512.png"
+                    alt="">
+                <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-css-style-develop-layout-language-512.png"
+                    alt="">
+                <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
+                    alt="">
+            </div>
+            <p class="title">Jadilah <strong>programmer</strong> yang tidak hanya menulis kode, tapi juga menciptakan
+                solusi <br>yang
+                membuat
+                dunia menjadi
+                tempat yang <strong>lebih baik.</strong></p>
+            <div class="btn">
+                <button class="btn-jumbotron">Hubungi Saya</button>
+            </div>
+        </div>
+        <!-- Kanan -->
+        <div class="jumbotron-kanan">
+            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </main>
+    <div class="tentang-profile">
+        <!-- kiri -->
+        <h1>Tentang saya</h1>
+        <p class="pengembangan-diri">Pengembang Muda Berbakat dengan <br>Semangat Belajar yang Tak Terbatas</p>
+        <div class="title-pengemabangan">
+            <p>Muhammad Ichsan Haekal, lahir pada tahun 2002, saat ini berdomisili di Pandeglang, Banten. Meskipun belum
+                memiliki pekerjaan tetap, Saya memiliki ketertarikan yang kuat pada dunia teknologi, khususnya dalam
+                pengembangan web dan aplikasi menggunakan React, JavaScript, dan Dart. Di luar pekerjaan, Saya menikmati
+                menonton film dan anime sebagai cara untuk bersantai.</p>
+            <div class="title-pengemabangan1">
+                <p>Saya dikenal sebagai individu yang humble dan mampu bekerja sama dalam tim maupun secara individu,
+                    menunjukkan fleksibilitas dan kemampuan adaptasi yang baik dalam berbagai situasi. Pengalaman
+                    belajarnya
+                    yang luas di platform seperti FreeCodeCamp, Udemy, dan Dicoding menunjukkan komitmen dan dedikasinya
+                    untuk terus berkembang dan memperdalam keterampilan di bidang teknologi informasi.</p>
+            </div>
+        </div>
+        <div class="pendidkan">
+            <div class="bg-pendidikan">
+                <h2 class="p-pendidikan">Pendidikan</h2>
+                <ul>
+                    <li>Smkn 2 Pandeglang (2017 - 2020) - Teknik Komputer dan Jaringan</li>
+                    <li>Universitas Pamulang Serang (Sekarang) - Sistem Informasi</li>
+                </ul>
+                <h2 class="p-pengalaman">Pengalaman</h2>
+                <ul>
+                    <li>Saruni Jaya (2021 - 2022) - IT Support</li>
+                    <li>PT. Indomarco Prismatama (2022 - 2023) - Store Crew</li>
+                </ul>
+            </div>
+            <!-- kanan -->
+            <div class="bg-komunikasi">
+                <h2>Mari berkomunikasi</h2>
+                <p>Jika Anda tertarik untuk bekerja sama, baik dalam proyek tim maupun individu, atau sekedar ingin
+                    mengenal saya lebih jauh, jangan ragu untuk menghubungi saya. Saya terbuka untuk berbagai kesempatan
+                    dan diskusi yang membangun. Mari kita kolaborasi dan ciptakan sesuatu yang luar biasa bersama!</p>
+                <div class="icon-tentang">
+                    <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/facebook-256.png" alt="">
+                    <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-2/512/telegram-256.png"
+                        alt="">
+                    <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-256.png" alt="">
+                    <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/23-whatsapp-256.png" alt="">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- icon -->
+    <div class="icon-wa">
+        <img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-256.png"
+            alt="">
+        <p>Whatsapp</p>
+    </div>
+    <!-- proyek -->
+    <div class="proyek">
+        <div class="proyek-konten">
+            <h1>Proyek</h1>
+            <p>Ingatlah, setiap programmer hebat yang Anda kagumi hari ini, pernah berada di posisi Anda sekarang -
+                penuh dengan pertanyaan dan keraguan. Jangan takut untuk membuat kesalahan, karena di balik setiap error
+                terdapat pelajaran yang berharga. Teruslah belajar, eksplorasi, dan jangan pernah menyerah pada rasa
+                penasaran Anda. Dunia teknologi selalu berkembang, dan Anda memiliki kesempatan untuk menjadi bagian
+                dari perubahan itu.</p>
+        </div>
+        <div class="proyek-client">
+            <div class="proyek-item">
+                <img src="https://leemrtnzz.github.io/Portfolio/assets/project/1.png" alt="">
+                <div class="title-proyek">
+                    <h2>Linktree</h2>
+                    <p>Linktree merupakan sebuah halaman sederhana yang berisi kumpulan link ke berbagai platform media
+                        sosial
+                        atau website lain yang dimiliki oleh seseorang atau sebuah organisasi. Proyek ini menghasilkan
+                        halaman
+                        Linktree yang responsif dan estetik, memungkinkan pengguna untuk dengan mudah mengakses semua
+                        link
+                        terkait dalam satu tempat. Desainnya yang minimalis namun menarik membuat informasi yang
+                        disajikan
+                        mudah
+                        untuk diikuti.</p>
+                </div>
+            </div>
+            <div class="proyek-item">
+                <img src="https://leemrtnzz.github.io/Portfolio/assets/project/2.png" alt="">
+                <div class="title-proyek">
+                    <h2>Portfolio</h2>
+                    <p>Portfolio ini merupakan kumpulan dari berbagai proyek yang telah saya kerjakan, termasuk web
+                        development, aplikasi mobile, dan lainnya. Setiap proyek disertai dengan deskripsi singkat,
+                        teknologi yang digunakan, dan link ke repositori GitHub untuk kode sumber. Portfolio ini
+                        dirancang
+                        untuk menunjukkan kemampuan dan pencapaian saya sebagai seorang developer, serta sebagai sarana
+                        untuk berkomunikasi dengan calon klien atau pemberi kerja yang tertarik dengan layanan saya.</p>
+                </div>
+            </div>
+            <div class="proyek-item">
+                <img src="https://leemrtnzz.github.io/Portfolio/assets/project/3.png" alt="">
+                <div class="title-proyek">
+                    <h2>Jadwal Sholat Bot</h2>
+                    <p>Bot ini dirancang untuk memberikan informasi waktu sholat secara otomatis kepada penggunanya.
+                        Dengan
+                        memanfaatkan API jadwal sholat, bot ini dapat mengirimkan notifikasi waktu sholat lima waktu
+                        berdasarkan lokasi yang ditentukan oleh pengguna. Fitur tambahan termasuk pengingat doa harian
+                        dan
+                        ayat Al-Qur'an. Bot ini ideal bagi komunitas muslim yang ingin memastikan mereka tidak
+                        melewatkan
+                        waktu sholat, terutama bagi mereka yang memiliki jadwal padat.</p>
+                </div>
+            </div>
+            <div class="proyek-item">
+                <img src="https://i.ytimg.com/vi/rR2LNcEmG4E/maxresdefault.jpg" alt="">
+                <div class="title-proyek">
+                    <h2>Tahu Sumedang</h2>
+                    <p>Tahu Sumedang, salah satu makanan khas Indonesia yang terkenal. Website ini menampilkan informasi
+                        tentang sejarah Tahu Sumedang, proses pembuatannya, dan berbagai varian rasa yang ditawarkan.
+                        Selain
+                        itu, terdapat fitur untuk pemesanan online yang memudahkan pelanggan untuk membeli Tahu Sumedang
+                        dari mana saja. Desain website yang menarik dan user-friendly meningkatkan pengalaman pengguna
+                        saat
+                        menjelajahi produk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- klien -->
+    <div class="klien">
+        <h1>Klien</h1>
+        <div class="klien-title">
+            <p>Yang pernah bekerjasama</p>
+        </div>
+        <p>Kolaborasi adalah kunci dalam menciptakan solusi yang inovatif dan berdampak. Berikut adalah beberapa klien
+            yang telah mempercayakan kami dalam perjalanan mereka menuju transformasi digital. Kerjasama ini tidak hanya
+            tentang menyelesaikan proyek, tetapi juga tentang membangun hubungan yang berkelanjutan dan saling
+            menguntungkan. Kami bangga dapat menjadi bagian dari perjalanan mereka dan berkomitmen untuk terus mendukung
+            pertumbuhan dan kesuksesan bersama.</p>
+        <div class="logo-klien">
+            <img src="https://leemrtnzz.github.io/Portfolio/assets/clients/Indomaret.png" alt="">
+            <img src="https://leemrtnzz.github.io/Portfolio/assets/clients/sarunijaya.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/starbucks-256.png" alt="">
+            <img src="https://cdn0.iconfinder.com/data/icons/logos-21/40/Adidas-256.png" alt="">
+        </div>
+    </div>
+    <section class="blok">
+        <div class="blok-title">
+            <h1>blok</h1>
+            <p>Blog ini merupakan ruang digital di mana saya berbagi pengetahuan, pengalaman, dan wawasan tentang dunia
+                teknologi informasi, khususnya pengembangan web dan aplikasi. Dengan fokus pada teknologi terkini
+                seperti
+                React, JavaScript, dan Dart, blog ini menawarkan tutorial, tips dan trik, serta studi kasus yang
+                mendalam
+                untuk membantu programmer di semua tingkat keahlian meningkatkan keterampilan mereka. Selain itu, saya
+                juga
+                membahas topik-topik seperti best practices dalam coding, keamanan aplikasi, dan tren teknologi masa
+                depan.
+                Blog ini dirancang untuk menjadi sumber daya yang berharga bagi komunitas developer yang ingin terus
+                belajar
+                dan tumbuh dalam karir mereka.</p>
+            <h2>Berita Terbaru</h2>
+        </div>
+        <div class="blok-thumbanil">
+            <div class="thumbnail-img">
+                <img src="https://itbox.id/wp-content/uploads/2023/01/perbedaan-programmer-dan-developer.jpeg" alt="">
+                <div class="title-img">
+                    <h2>Apa Itu Programmer? Hal-Hal Yang Wajib Dikuasai</h2>
+                </div>
+                <p>Programmer adalah sebuah jenis profesi atau pekerjaan yang bertujuan untuk membuat sebuah sistem
+                    menggunakan bahasa pemrograman. Seseorang yang memiliki skill menulis kode program (syntax) dan
+                    merancang sistem, bisa juga disebut programmer. Kode atau bahasa program yang ... <strong>[Baca
+                        selengkapnya]</strong></p>
+            </div>
+            <div class="thumbnail-img">
+                <img src="https://www.unpas.ac.id/wp-content/uploads/2021/11/SANDHIKA-GALIH-1024x682.jpeg" alt="">
+                <div class="title-img">
+                    <h2>MOTIVASI Belajar CODING!!</h2>
+                </div>
+                <p>"Fokus aja untuk bertumbuh rsedikit demi sedikit setiap harinya seperti kata buku Atomic Habits
+                    tadi jangan lupa juga untuk selalu bersyukur dengan capaian yang udah kita raih ingat sesedikit
+                    ... <strong>[Tonton videonya]</strong></p>
+                <div class="icon-awesom">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <i class="fa-solid fa-volume-low"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="kontak">
+        <div class="kontak-title">
+            <h1>Kontak</h1>
+            <h2>Hubungi Kami</h2>
+            <p>Jangan ragu untuk menghubungi saya apapun kebutuhan Anda, baik itu untuk diskusi teknis, peluang
+                kolaborasi, atau bahkan hanya untuk mengucapkan halo. Mari kita jalin komunikasi yang produktif dan
+                membangun sesuatu yang luar biasa bersama!</p>
+        </div>
+        <div class="kontak-form">
+            <form>
+                <label for="name">Nama</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="email">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan"></textarea>
+                <button>kirim</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-menu">
+            <div class="menu-satu">
+                <h1>Fikri</h1>
+                <h3>Hubungi saya</h3>
+                <ul>
+                    <li>ichsan.haekal23@gmail.com</li>
+                    <li>Jl. Ciekek</li>
+                    <li>Pandeglang</li>
+                </ul>
+            </div>
+            <div class="menu-dua">
+                <h3>Kategori</h3>
+                <ul>
+                    <li>Programming</li>
+                    <li>Motivasi</li>
+                    <li>Teknologi</li>
+                </ul>
+            </div>
+            <div class="menu-tiga">
+                <h3>Tautan</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Tentang saya</li>
+                    <li>Proyek</li>
+                    <li>Klien</li>
+                    <li>Blok</li>
+                    <li>Kontak</li>
+                </ul>
+            </div>
+        </div>
+        <div class="icon-footer">
+            <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/facebook-256.png" alt="">
+            <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-2/512/telegram-256.png" alt="">
+            <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-256.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/23-whatsapp-256.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
